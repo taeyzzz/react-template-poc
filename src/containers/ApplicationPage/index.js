@@ -6,6 +6,7 @@ import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 
 import * as ApplicationActions from './actions'
+import Button from '../../conponents/Button/Loadable'
 
 import HomePage from '../HomePage/Loadable'
 
@@ -20,7 +21,7 @@ class ApplicationLayout extends Component {
 			<ApplicationLayoutStyled>
 				This is header
 				<div>
-					<button onClick={this.gotoLogin}>Goto Login</button>
+					<Button text="Goto Login" onClick={this.gotoLogin1}/>
 				</div>
 				<div>
 					<Switch>

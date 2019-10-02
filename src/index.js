@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux'
+import * as Sentry from '@sentry/browser';
 
 import configureStore from './store/configureStore'
 import routes from './routes'
@@ -8,6 +9,11 @@ import routes from './routes'
 import * as serviceWorker from './serviceWorker';
 
 import './global-style.scss'
+
+// Sentry.init({
+//   dsn: "https://57f3acb1c82c42f2ac636e2d2bf899ae@sentry.io/1767667",
+//   environment: process.env.NODE_ENV,
+// });
 
 document.body.oncontextmenu = (e) => {
 	e.preventDefault()
